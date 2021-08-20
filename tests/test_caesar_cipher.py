@@ -26,5 +26,5 @@ def test_encrypt_decrypt(input, expected_value, key):
 
 # decrypt encrypted version of It was the best of times, it was the worst of times. WITHOUT knowing the shift used.
 def test_crack():
-    encrypted = encrypt("it was the worst of times", 14)
-    assert crack(encrypted) == "it was the worst of times"
+    encrypted = encrypt("It was the best of times, it was the worst of times.", 14)
+    assert crack(encrypted) == "It was the best of times, it was the worst of times."
